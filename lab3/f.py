@@ -3,4 +3,5 @@ def fa(f):
     print(c)
 
 f = int(input())
+
 fa(f)
