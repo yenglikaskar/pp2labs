@@ -80,7 +80,15 @@ movies = [
 def above(m):
     print(m["imdb"] > 5.5)
 def abovelist(movies):
-    print(m for m in movies if m["imdb"] > 5.5)
+    for m in movies:
+        if m['imdb'] > 5.5:
+            print(m)
 def category(movies, aa):
-    print(m["name"] for m in movies if aa == m["category"])
+    print([m["name"] for m in movies if aa == m["category"]])
+
+i = int(input("enter number of movie: "))
+m = movies[i + 1]
+above(m)
+abovelist(movies)
 aa = input("enter category: ")
+category(movies, aa)
