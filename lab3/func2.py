@@ -77,3 +77,10 @@ movies = [
 "category": "Romance"
 }
 ]
+def above(m):
+    print(m["imdb"] > 5.5)
+def abovelist(movies):
+    print(m for m in movies if m["imdb"] > 5.5)
+def category(movies, aa):
+    print(m["name"] for m in movies if aa == m["category"])
+aa = input("enter category: ")
