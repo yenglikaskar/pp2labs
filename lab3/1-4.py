@@ -6,6 +6,14 @@ grams = int(input())
 k(grams)
 
 
+#fahrenheit
+def fahr(f):
+    c = (5 / 9) * (f - 32)
+    print(c)
+
+f = int(input())
+fahr(f)
+
 
 #howmany
 def solve(numheads = 35, numlegs = 94):
@@ -17,3 +25,17 @@ def solve(numheads = 35, numlegs = 94):
     print(f"rabbits = {r}, chicken = {c}")
 
 solve()
+
+#prime
+def prime(num):
+    prime = True
+
+    if num < 2:
+        prime = False
+    else:
+        for i in range(2, num):
+            if num % i == 0:
+                prime = False
+                break
+def is_prime(general):
+    pass
