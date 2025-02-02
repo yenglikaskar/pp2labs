@@ -2,14 +2,20 @@
 def v(r):
     vol = (4 * 3.14 * r**3)/3
     print("Volume:", vol)
-#r = int(input())
-#v(r)
+r = int(input())
+v(r)
 
 #unique
 def sortt(mylist):
     pass
 
 #palindrome
+def palindrome(word):
+    rev = word[::-1]
+    return rev == word
+word = input()
+print(palindrome(word))
+
 
 #histogram
 def histogram(l):

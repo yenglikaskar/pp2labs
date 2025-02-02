@@ -4,8 +4,8 @@
 def reverse(a):
     each = a.split()
     print (*each[:: -1])
-#a = input()
-#reverse(a)
+a = input()
+reverse(a)
 
 #3next
 def has_33(nums):
