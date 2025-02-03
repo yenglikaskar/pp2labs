@@ -27,15 +27,15 @@ def solve(numheads = 35, numlegs = 94):
 solve()
 
 #prime
-def prime(num):
-    prime = True
-
-    if num < 2:
-        prime = False
-    else:
-        for i in range(2, num):
-            if num % i == 0:
-                prime = False
-                break
-def is_prime(general):
-    pass
+def is_prime(num):
+    prime = []
+    for i in num:
+        count = 0
+        for j in range(2, i):
+            if i % j == 0:
+                count += 1 
+        if count == 0:
+            prime.append(i) 
+    print(prime)
+num = list(map(int, input().split()))
+is_prime(num)
