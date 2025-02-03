@@ -1,5 +1,3 @@
-#permu
-
 #revstring
 def reverse(a):
     each = a.split()

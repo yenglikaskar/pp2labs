@@ -6,8 +6,15 @@ r = int(input())
 v(r)
 
 #unique
-def sortt(mylist):
-    pass
+def unique_elements(first_list):
+    new_list = [first_list[0]]
+    for item in first_list:
+        if item not in new_list:
+            new_list.append(item)
+    print("New list", new_list)
+
+enter = list(map(int, input().split()))
+unique_elements(enter)
 
 #palindrome
 def palindrome(word):
