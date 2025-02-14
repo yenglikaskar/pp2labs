@@ -23,13 +23,16 @@ print("Without:", without)
 
 
 #4
+from datetime import datetime
 def in_seconds(d1, d2):
     format = "%Y-%m-%d %H:%M:%S"
     dt1 = datetime.strptime(d1, format)
     dt2 = datetime.strptime(d2, format)
     difference = abs((dt2 - dt1).total_seconds())
     return difference
+
 d1 = input("first date: ")
 d2 = input("second date: ")
+
 diff = in_seconds(d1, d2)
 print(f"Difference {diff} seconds")
